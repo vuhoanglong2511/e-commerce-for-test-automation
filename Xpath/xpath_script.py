@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.get("https://demoqa.com/automation-practice-form")
 
 # Chờ tối đa 10 giây để phần tử xuất hiện
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 9)
 
 # Tìm ô nhập "First Name" sau khi đảm bảo nó đã xuất hiện
 name_field = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id='firstName']")))
